@@ -43,11 +43,8 @@ public class MiniProxy : IHttpHandler
 			req.ContentType = "text/xml;charset=\"utf-8\"";
 			req.Accept = "text/xml";
 			req.Method = context.Request.HttpMethod; // "POST";
-			req.Credentials = new NetworkCredential(
-				"PLLEBIZ",
-				"nps2014!@#",
-				"DE-S-0129030");
-			req.PreAuthenticate = true;
+			//req.Credentials = new NetworkCredential( ... )
+			//req.PreAuthenticate = true;
 			req.KeepAlive = false;
 			req.Timeout = -1;
 
